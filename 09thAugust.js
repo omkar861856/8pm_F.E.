@@ -12,32 +12,26 @@ for (let i = 0; i < number.length; i++) {
   console.log(number[i]);
 }
 
-
-// forEach 
+// forEach
 
 // number.forEach();
 
-
 // function detour / function belong to reference type
 
-
 //regular function
-function Greet(){
-    console.log("Greetings ")
+function Greet() {
+  console.log("Greetings ");
 }
 
-function Cook(){
-    // some cooking logic
+function Cook() {
+  // some cooking logic
 }
 
 // anonymous function
 
-const AFunction = function(){
-
-    console.log("An anonymous function")
-
-}
-
+const AFunction = function () {
+  console.log("An anonymous function");
+};
 
 // arrow function - concise syntax introduced in 2015 is es6
 
@@ -47,8 +41,8 @@ const AFunction = function(){
 
 // template literals
 
-const ArrowFunction = params=>console.log(`hello from arrow function with ${params}.`)
-
+const ArrowFunction = (params) =>
+  console.log(`hello from arrow function with ${params}.`);
 
 ArrowFunction("demo");
 
@@ -58,20 +52,61 @@ ArrowFunction("demo");
 
 // forEach
 
-number.forEach(num=>console.log(num))
+number.forEach((num) => console.log(num));
 
-console.log("break")
+console.log("break");
 
 // map
 
-number.map(num=>console.log(num))
+number.map((num) => console.log(num));
 
 //filter // reduce method
 
+//JSON iteration - -JavaScript Object Notation
 
-//JSON iteration
+const person = {
+  userName: "John",
+  age: 25,
+  address: {
+    street: "123 Main St",
+    city: "New York",
+  },
+};
+
+// for in
+
+for (let key in person) {
+  console.log(typeof person[key]);
+
+  if (typeof person[key] === "object") {
+    console.log("object detected");
+  }
+
+  console.log(`${key} is ${person[key]}`);
+}
 
 
+// functions use case
+function CheckEligiblity(parameter) {
+  console.log(parameter.age);
 
+  // control strucutres
 
+  if (parameter.age < 18) {
+    console.log(`${parameter.userName} Get a learner license`);
+  } else {
+    console.log(`${parameter.userName}  You are eligible for driving`);
+  }
+}
+
+const person2 = {
+  userName: "Jane",
+  age: 16,
+};
+
+CheckEligiblity(person);
+
+CheckEligiblity(person2);
+
+// end 
 
