@@ -88,7 +88,7 @@ console.log(w);
 
 // experiment with window object
 
-console.log(window)
+console.log(window);
 
 
 
