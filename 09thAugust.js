@@ -6,7 +6,7 @@ console.log(document);
 
 const number = [1, 2, 3, 4, 5];
 
-// for loop
+// for loop - control strucutre - which determines the flow of code/logic.
 
 for (let i = 0; i < number.length; i++) {
   console.log(number[i]);
@@ -52,6 +52,8 @@ ArrowFunction("demo");
 
 // forEach
 
+// 2015 or es v6 - pre es6 and post es6
+
 number.forEach((num) => console.log(num));
 
 console.log("break");
@@ -73,7 +75,7 @@ const person = {
   },
 };
 
-// for in
+// for-in
 
 for (let key in person) {
   console.log(typeof person[key]);
