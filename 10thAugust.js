@@ -102,6 +102,7 @@ console.log(str.split(" ", -3));
 
 console.log(str.split(" ", 3).join("-")); //join will convert array back to string
 
+
 //  Json iteration or Object methods - know ltr.
 
 let jsonObj = {
@@ -217,7 +218,9 @@ html.strength = 40;
 
 css.strength = 50;
 
-///programming language - single threaded - 
+//programming language - single threaded
+
+// data types are - prmitive & reference - characteristics
 
 
 
