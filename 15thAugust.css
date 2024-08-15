@@ -1,0 +1,45 @@
+h1{
+
+    color:brown;
+    background-color: aqua;
+
+}
+
+table, th, td{
+
+    border: 2px solid black;
+    border-collapse: collapse;
+
+}
+
+th{
+    color: burlywood;
+}
+
+tr:nth-child(even){
+    background-color: lightcoral;
+}
+
+
+td:nth-child(even),th:nth-child(odd){
+    background-color: bisque;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+}
+
+iframe{
+    width: 50%;
+}
+
+#frame1{
+    width: 100%;
+}
+
+.class1{
+    color: darkgreen;
+    background-color: lightblue;
+}
+
