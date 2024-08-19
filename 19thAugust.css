@@ -1,0 +1,59 @@
+#z-index{
+    position: absolute;
+    top:10px;
+    left: 10px;
+    z-index: 1;
+}
+
+#paragraph1{
+    width: 200px;
+    height: 100px;
+    overflow: auto;
+}
+
+#nav1{
+    background-color: aquamarine;
+    border: 2px solid black;
+    position: sticky;
+    top: 10px;
+}
+
+/* clear fix hack */
+
+#nav1::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#one, #two{
+    float: left;
+    margin-right: 10px;
+}
+
+#login{
+    float: right;
+    margin-right: 10px;
+
+}
+
+.box{
+
+    background-color: aquamarine;
+    border: 2px solid black;
+    margin: 2px;
+    flex: 1 1 400px;
+    height: 100px;
+    display: grid;
+    place-items: center;
+}
+
+#flex-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
+
